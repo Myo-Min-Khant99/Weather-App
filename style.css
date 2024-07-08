@@ -1,0 +1,241 @@
+@font-face {
+  font-family: Roboto;
+  src: url(font/Roboto-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+.testing {
+  width: 100%;
+  height: 100%;
+  font-family: Roboto;
+  background-image: linear-gradient(120deg, rgba(121,229,226,1) 0%, rgba(77,205,214,1) 69%, rgba(37,180,186,1) 100%);
+  position: relative;
+  transition: all 2s;
+  color: white;
+  z-index: 1;
+}
+
+.testing::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(137deg, rgba(255,245,123,1) 0%, rgba(250,134,7,1) 100%) ;
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.testing.change-opacity::before {
+  opacity: 1; /* Change this to the desired opacity */
+}
+
+.testing::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(137deg, rgba(1,55,105,1) 0%, rgba(1,13,55,1) 100%) ;
+  z-index: -2;
+  transition: opacity 0.5s linear;
+  opacity: 0;
+}
+
+.testing.hehe::after {
+  opacity: 1; /* Change this to the desired opacity */
+}
+
+.bg_testing {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/404.png), url(img/404.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 250px auto , 250px auto;
+
+}
+
+.header {
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.card-1 {
+  max-width: 370px;
+  margin: 30px auto 0px auto;
+}
+
+.card-1 form {
+  text-align: center;
+}
+
+#country_name {
+  max-width: 60%;
+}
+
+#country_name:focus {
+  outline-color: transparent;
+}
+
+#country_name , #submit {
+  color: white;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  padding: 5px;
+}
+
+.card-2 {
+  max-width: 370px;
+  margin: 30px auto 20px auto;
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 2px solid rgba( 255, 255, 255, 0.18 );
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.img-box1 {
+  width: 250px;
+  height: auto;
+  transform: rotate(30deg);
+  position: absolute;
+  top: 17vh;
+  left: 55vw;
+  z-index: -1;
+
+}
+
+.img-box2 {
+  width: 250px;
+  height: auto;
+  transform: rotate(-30deg);
+  top: 44vh;
+  left: 32vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.day_condition_img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.top-part {
+  height: 130px;
+}
+
+.top-part-info {
+  margin-top: 25px;
+  height: 100px;
+  width: 65%;
+  text-align: center;
+  float: left;
+}
+
+.top-part-info h4 {
+  padding: 10px;
+}
+
+.top-part img {
+  width: 35%;
+  height: 100%;
+}
+
+.middle-part {
+  text-align: center;
+  margin: 10px;
+}
+
+.middle-part h1 {
+  padding: 20px;
+}
+
+.middle-part img {
+  width: 50%;
+  text-align: center;
+}
+
+.bottom-part {
+  margin-top: 30px;
+}
+
+.bottom-part h3 {
+  padding: 15px;
+}
+
+.bottom-part-left {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.bottom-part-right {
+  width: 50%;
+  float: right;
+  text-align: center;
+}
+
+.discard {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (max-width: 700px) {
+  .header {
+    font-size: 25px;
+  }
+
+  .card-1 {
+    max-width: 270px;
+  }
+
+  .card-2 {
+    max-width: 270px;
+  }
+
+  #country_name {
+    max-width: 60%;
+  }
+
+  /* .img-box1 {
+    top: 17vh;
+    left: 55vw;
+  }
+  
+  .img-box2 {
+    top: 40vh;
+    left: -10vw;
+  }
+
+  .day_condition_img {
+    width: 100%;
+    height: 250px;
+  } */
+
+  .bottom-part {
+    font-size: 10px;
+  }
+}

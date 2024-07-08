@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Apps</title>
+</head>
+<body>  
+  <div class="testing">
+    <div class="bg_testing">
+      <h1 class="header">Weather App</h1>
+      <div class="card-1">
+        <form id="my_form">
+          <input type="text" id="country_name" name="country_name">
+          <input type="submit" id="submit" value="Submit">
+        </form>
+      </div>
+      <div class="card-2">
+        <div class="top-part">
+          <div class="top-part-info">
+            <h4><span id="condition_value">?</span> <span id="timeOfDay_value">?</span></h4>
+            <h4><span id="day_value">?</span> <span id="time_value">?</span></h4>
+          </div>
+          <img src="img/world.webp">
+        </div>
+        <div class="middle-part">
+          <h1 id="country_value">City (Country)</h1>
+          <img id="icon_value" src="img/404.png">
+        </div>
+        <div class="bottom-part">
+          <div class="bottom-part-left">
+            <h3>Temp: &nbsp;<span id="temp_value">??</span>°C</h3>
+            <h3>Pressure: &nbsp;<span id="pressure_value">??</span></h3>
+          </div>
+          <div class="bottom-part-right">
+            <h3>Humidity: &nbsp;<span id="humidity_value">??</span>%</h3>
+            <h3>Wind: &nbsp;<span id="wind_value">??</span>kp/h</h3>
+          </div>
+          <div class="discard"></div>
+        </div>
+      </div>
+
+      <!-- <div class="img-box1">
+        <img src="img/404.png" id="bg_img1" class="day_condition_img">
+      </div>
+
+      <div class="img-box2">
+        <img src="img/404.png" id="bg_img2" class="day_condition_img">
+      </div> -->
+    </div>
+  </div>
+
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  <script src="test.js"></script>
+</body>
+</html>
